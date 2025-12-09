@@ -1,0 +1,577 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Diseño menu*/
+header{
+    background: #fff;
+    padding: 10px 30px;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li{
+    display: flex;
+    align-items: center;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: #0066ff;
+    font-weight: bold;
+    transition: color 0.3s;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+
+.menu li a img{
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    vertical-align: middle;
+}
+
+.menu li a :hover{
+    color: #f60;
+}
+
+.menu li:not(:last-child)::after{
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 20px;
+    background-color: #f97316;
+    margin: 0 10px;
+}
+
+/*Redes sociales*/
+.redes img{
+    width: 10px;
+    height: 15px;
+    margin-left: 10px;
+    vertical-align: middle;
+    transition: 0.3s;
+}
+
+.redes img:hover{
+    transform: scale(1.2);
+}
+
+/*Ajustes Idioma*/
+.Idioma{
+    position: absolute;
+    right: 30px;
+}
+
+.Idioma select{
+    border: 1px solid #0066ff;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #0066ff;
+    font-weight: bold;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.Idioma select:hover{
+    background-color: #0066ff;
+    color: #fff;
+}
+
+/*Presentacion o titulo*/
+.seccion{    
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 20px;
+    background-image: url("../IMG/Fondo\ 2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.seccion::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.8);
+    z-index: 0;
+}
+
+.seccion h1{
+    position: relative;
+    z-index: 1;
+    font-size: 4.5rem;
+    font-weight: 800;
+    color: #f97316;
+    line-height: 1.1;
+    margin-bottom: 10px;
+}
+
+.subtitulo{  
+    position: relative;
+    z-index: 1;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #0066ff;
+    margin-bottom: 10px;
+}
+
+/*Botones*/
+.botones{
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 50px;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: #0066ff;
+    color: #fff;
+    padding: 14px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.btn img{
+    width: 18px;
+    height: auto;
+    margin-left: 10px;
+    margin-left: 6px;
+}
+
+.btn:hover{
+    background: #04a;
+    transform: translateY(-2px);
+}
+
+/*Boton soporte*/
+.soporte{
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    background: #f97316;
+    padding: 10px 14px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    transition: all 0.3s ease;
+}
+
+.soporte a{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 6px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.soporte img{
+    width: 25px;
+    height: 20px;
+}
+
+.soporte:hover{
+    background: #fb7b24;
+    transform: translateX(3px);
+}
+
+/*Footer*/
+footer{
+    background-color: #0066ff; /* Azul de fondo */
+    color: white;
+    padding: 25px 50px; /* Espacio interno general */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+footer ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+footer ul li{
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/*Linea divisora*/
+footer ul li:not(:last-child)::after{
+    content: "";
+    position: absolute;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 16px;
+    background-color: white;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover{
+    color: #fb7b24;
+}
+
+footer p{
+    position: absolute;
+    right: 50px;
+    bottom: 15px;
+    font-size: 13px;
+    font-weight: 400;
+    opacity: 0.8;
+    letter-spacing: 0.3px;
+}
+
+/*SIDEMAR MENU OCULTO*/
+    .sidebar{
+        position: fixed;
+        top: 0;
+        right: -260px;
+        width: 250px;
+        height: 100%;
+        background: #0d6efd;
+        color: white;
+        padding: 20px;
+        box-shadow: 4px 0 8px rgba(0,0,0,0.3);
+        transition: 0.3s ease;
+        z-index: 9999;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /*Cuando este visible*/
+    .sidebar.active{
+        left: 0;
+    }
+
+    /*Boton para cerrar*/
+    .close-btn{
+        background: transparent;
+        border: none;
+        font-size: 25px;
+        color: white;
+        align-self: flex-end;
+        cursor: pointer;
+    }
+
+    /*Enlaces del menu*/
+    .sidebar a{
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        padding: 8px 0;
+        display: block;
+    }
+
+    /*Redes sociales*/
+    .sidebar-redes{
+        margin-top: 20px;
+        display: flex;
+        gap: 15px;
+    }
+
+    .sidebar-redes img{
+        width: 18px;
+        height: 21px;
+        cursor: pointer;
+    }
+
+/*Media querin para Pc y portatiles*/
+@media(min-width: 1025px){
+    .menu-icon{
+        display: none;
+    }
+
+    header{
+        padding: 15px 40px;
+    }
+
+    .menu li a{
+        font-size: 1rem;
+    }
+
+    .seccion h1{
+        font-size: 4.5rem;
+    }
+
+    .botones{
+        max-width: 700px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    footer{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    footer ul{
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    footer p{
+        position: static;
+        font-size: 13px;
+        text-align: right;
+        opacity: 0.8;
+    }
+
+    .sidebar{
+        display: none !important;
+    }
+}
+
+/*Media querin para Tablets (768px a 1024px*/
+@media(min-width: 768px) and (max-width: 1024px){
+    header{
+        width: 100vw;
+        margin: 0;
+        padding-left: 0;
+        padding-right: 0;
+        box-sizing: border-box;
+        background-color: #ffffff;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        z-index: 1000;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 30px;
+        position: relative;
+    }
+
+    .menu
+    .redes{
+        display: none;
+    }
+
+    .menu-icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+    }
+
+    .menu-icon img{
+        width: 100%;
+        height: auto;
+    }
+
+    .Idioma{
+        display: block;
+        position: relative;
+        margin: 0;
+    }
+
+    .seccion h1{
+        font-size: 3rem;
+    }
+
+    .subtitulo{
+        font-size: 1.1rem;
+    }
+
+    .botones{
+        grid-template-columns: 1fr 1fr;
+        max-width: 500px;
+        gap: 15px;
+    }
+
+    .btn{
+        padding: 12px 16px;
+        font-size: 0.9rem;
+    }
+
+    .soporte{
+        bottom: 15px;
+        left: 0;
+        padding: 8px 12px;
+    }
+
+    .soporte img{
+        width: 20px;
+    }
+
+    .soporte a{
+        font-size: 0.8rem;
+    }
+
+    footer{
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    footer ul{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    footer p{
+        margin-top: 15px;
+        position: static;
+        text-align: center;
+        font-size: 12px;
+    }
+}
+
+/*Media querin para Smarphone (hasta 767px)*/
+@media(max-width: 767px){
+    header{
+        width: 100vw;
+        margin: 0;
+        padding-left: 0;
+        padding-right: 0;
+        box-sizing: border-box;
+        background-color: #ffffff;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        z-index: 1000;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 15px;
+        position: relative;
+    }
+
+    .menu,
+    .redes{
+        display: none;
+    }
+
+    .menu-icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+
+    .menu-icon img{
+        width: 100%;
+        height: auto;
+    }
+
+    .Idioma{
+        display: block;
+        position: relative;
+        margin: 0;
+    }
+
+    .seccion{
+        padding: 40px 30px;
+    }
+
+    .seccion h1{
+        font-size: 2.2rem;
+    }
+
+    .subtitulo{
+        font-size: 1rem;
+    }
+
+    .botones{
+        grid-template-columns: 1fr;
+        max-width: 300px;
+    }
+
+    .btn{
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+
+    .soporte{
+        bottom: 15px;
+        left: 0;
+        padding: 8px 12px;
+    }
+
+    .soporte img{
+        width: 20px;
+    }
+
+    .soporte a{
+        font-size: 0.8rem;
+    }
+
+    footer{
+        flex-direction: column;
+        text-align: center;
+        padding: 25px 15px;
+    }
+
+    footer ul{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    footer p{
+        margin-top: 20px;
+        position: static;
+        font-size: 11px;
+        opacity: 0.7;
+    }
+}
