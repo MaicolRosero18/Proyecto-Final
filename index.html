@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gastronomia Colombiana</title>
+        <link rel="stylesheet" href="CSS/Estilos-1.css">
+        <link rel="stylesheet" href="CSS/RegionAndina.css">
+    </head>
+    
+    <body>
+        <!--Encabezado-->
+        <header>
+            <nav class="navbar">
+                <div class="menu-icon">
+                    <img src="IMG/menu.png" alt="Menú">
+                </div>
+                <ul class="menu">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Recetas</a></li>
+                    <li><a href="#">Sobre Nosotros</a></li>
+                    <li class="redes">
+                        <a href="#"><img src="IMG/Facebook logo.png" alt="Facebook"></a>
+                        <a href="#"><img src="IMG/TikTok logo.png" alt="TikTok"></a>
+                        <a href="#"><img src="IMG/Twitter logo.png" alt="Twitter"></a>
+                    </li>
+                </ul>
+                <div class="Idioma">
+                    <select>
+                        <option value="Es">Español</option>
+                        <option value="En">Ingles</option>
+                    </select>
+                </div>
+            </nav>
+        </header>
+        
+        <!--Seccion principal-->
+        <main class="seccion">
+            <h1>Gastronomía<br>Colombiana</h1>
+            <p class="subtitulo">Recetas que unen culturas, sabores que enamoran.</p>
+            <div class="botones">
+                <a href="#" class="btn">Región Andina<img src="IMG/ubicaciones 1.png"></a>
+                <a href="#" class="btn">Región Pacífico<img src="IMG/ubicaciones 1.png"></a>
+                <a href="#" class="btn">Región Caribe<img src="IMG/ubicaciones 1.png"></a>
+                <a href="#" class="btn">Región Amazónica<img src="IMG/ubicaciones 1.png"></a>
+            </div>
+        </main>
+
+        <!--Boton de soporte-->
+        <div class="soporte">
+            <a href="#">
+                <img src="IMG/correo logo.png" alt="soporte">
+                <span>Soporte</span>
+            </a>
+        </div>
+
+        <section class="region-container">
+            <div class="region-header">
+                <div class="region-selector">
+                    Region Andina
+                    <img src="IMG/ubicaciones 1.png" alt="Ubicacion">
+                </div>
+            </div>
+
+            <!--CATEGORIA DESAYUNOS-->
+            <h2 class="titulo-categoria">Desayunos</h2>
+            
+            <div class="grilla-cartas">
+                
+                <!--Flecha Izquierda-->
+                <button class="btn-flecha" id="btnIzqDesayuno">
+                    <img src="IMG/Flecha Izq.png" alt="Atras">
+                </button>
+
+                <div class="cartas-comida">
+                    <img src="IMG/Calentado Paisa.png" alt="Calentado Paisa">
+                    <h4>Calentado Paisa</h4>
+                    <button>Descripción y Receta</button>
+                </div>
+               
+                <div class="cartas-comida">
+                    <img src="IMG/Caldo Costilla.png" alt="Caldo de Costilla">
+                    <h4>Caldo de Costilla</h4>
+                    <button>Descripción y Receta</button>
+                </div>
+               
+                <div class="cartas-comida">
+                    <img src="IMG/chocolate santafereño.png" alt="Chocolate Santafereño">
+                    <h4>Chocolate Santafereño</h4>
+                    <button>Descripción y Receta</button>
+                </div>
+                
+                <div class="cartas-comida">
+                    <img src="IMG/Tamal Tolimense 1.png" alt="Tamal tolimense">
+                    <h4>Tamal Tolimense</h4>
+                    <button>Descripción y Receta</button>
+                </div>
+
+                <!--Flecha Derecha-->
+                <button class="btn-flecha" id="btnDerDesayuno">
+                    <img src="IMG/Flecha Der.png" alt="Siguiente">
+                </button>
+            </div>
+
+            <!--CATEGORIA ALMUERZOS-->
+            <h3 class="titulo-categoria">Almuerzos</h3>
+
+            <div class="grilla-cartas">
+
+                <!--Flecha Izquierda-->
+                <button class="btn-flecha" id="btnIzqAlmuerzo">
+                    <img src="IMG/Flecha Izq.png" alt="Atras">
+                </button>
+
+                <div class="cartas-comida">
+                    <img src="IMG/Bandeja paisa 1.png" alt="Bandeja Paisa">
+                    <h4>Bandeja Paisa</h4>
+                    <button>Descripción y Receta</button>
+                </div>
+
+                <div class="cartas-comida">
+                    <img src="IMG/Ajiaco 1.png" alt="Ajiaco Santafereño">
+                    <h4>Ajiaco Santafereño</h4>
+                    <button>Descripción y Receta</button>
+                </div>
+
+                <div class="cartas-comida">
+                    <img src="IMG/Sancocho 1.png" alt="Sancocho">
+                    <h4>Sancocho</h4>
+                    <button>Descripción y Receta</button>
+                </div>
+
+                <div class="cartas-comida">
+                    <img src="IMG/mute santandereano 1.png" alt="Mute Santandereano">
+                    <h4>Mute Santandereano</h4>
+                    <button>Descripción y Receta</button>
+                </div>
+
+                <!--Flecha Derecha-->
+                <button class="btn-flecha" id="btnDerAlmuerzo">
+                    <img src="IMG/Flecha Der.png" alt="Siguiente">
+                </button>
+            </div>
+        </section>
+
+        <footer>
+            <li><a href="#">Aviso de Privacidad</a></li>
+            <li><a href="#">Politicas de Uso del Sitio Web</a></li>
+            <li><a href="#">Contacto</a></li>
+            <p>Gastronomía Colombiana ©2025</p>
+        </footer>
+
+        <!--Codigos JS-->
+        <script src="JSS/Codigo1.js"></script>
+        <script src="JSS/Codigo2.js"></script>
+
+    </body>
+</html>
